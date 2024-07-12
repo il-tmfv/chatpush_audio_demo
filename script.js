@@ -1,9 +1,11 @@
 const audio = document.getElementById("audio-123");
 const progress = document.getElementById("progress");
 const duration = document.getElementById("duration");
+const button = document.getElementById("button");
 
 function play() {
   audio.play();
+  button.innerText = "||";
 }
 
 function updateProgress(e) {
@@ -22,4 +24,5 @@ audio.addEventListener("timeupdate", updateProgress);
 
 audio.addEventListener("ended", () => {
   progress.style.width = "0%";
+  button.innerText = ">";
 });
