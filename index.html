@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>audio demo</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="message">
+            <button class="play" onclick="play()">></button>
+            <div class="wave">
+                <audio
+                    id="audio-123"
+                    src="https://production-docs.storage.yandexcloud.net/delivery_files/c625003a/b9478cd9/3b241159/a606fdad/1720771920_media.oga?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=bipj3XwGMXa8-wO4T3mc%2F20240712%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20240712T081209Z&X-Amz-Expires=172800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef49599bdb4be3c23e66e05d01889741de5c9866fdb0649091904027a74b375c"
+                ></audio>
+                <div class="blank"></div>
+                <div id="progress" class="filled"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
